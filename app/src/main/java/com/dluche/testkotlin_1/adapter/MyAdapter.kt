@@ -59,6 +59,16 @@ class MyAdapter(context: Context, source: ArrayList<HashMap<String, String>>, re
             "3" -> iv_1.setImageDrawable(context.getDrawable(R.drawable.avg_thor))
             "4" -> iv_1.setImageDrawable(context.getDrawable(R.drawable.avg_black_widow))
             "5" -> iv_1.setImageDrawable(context.getDrawable(R.drawable.avg_spider_man))
+            "6" -> iv_1.setImageDrawable(context.getDrawable(R.drawable.avg_panter))
+            "7" -> iv_1.setImageDrawable(context.getDrawable(R.drawable.avg_vison))
+            "8" -> iv_1.setImageDrawable(context.getDrawable(R.drawable.avg_scarlet_witch))
+            "9" -> iv_1.setImageDrawable(context.getDrawable(R.drawable.avg_falcon))
+
+            /*
+            *                 "Black Panter",
+                "Vision",
+                "Scarllet Witch",
+                "Falcon"*/
         }
         tv_1.setText(item.get(MyConstants.KEY_1))
         tv_2.setText(item.get(MyConstants.VAL_1))

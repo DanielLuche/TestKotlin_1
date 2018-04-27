@@ -52,7 +52,28 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun generateList(): ArrayList<HashMap<String,String>> {
-        var HashMap: HashMap<String,String> = HashMap()
+        val initalList: List<String> = listOf(
+                "Iron Man",
+                "Cap America",
+                "Hulk",
+                "Thor",
+                "Black Widow",
+                "Spider Man",
+                "Black Panter",
+                "Vision",
+                "Scarllet Witch",
+                "Falcon")
+
+        for(i in 0 until initalList.size){
+            var hmAux: HashMap<String,String> = HashMap()
+            //
+            hmAux.put(MyConstants.KEY_1,i.toString())
+            hmAux.put(MyConstants.VAL_1,initalList.get(i))
+            //
+            aux.add(hmAux)
+        }
+
+        /*var HashMap: HashMap<String,String> = HashMap()
         var HashMap2: HashMap<String,String>  = HashMap()
         var HashMap3: HashMap<String,String>  = HashMap()
         var HashMap4: HashMap<String,String>  = HashMap()
@@ -72,8 +93,10 @@ class MainActivity : AppCompatActivity() {
         HashMap4.put(MyConstants.VAL_1,"Thor")
         //
         HashMap5.put(MyConstants.KEY_1,"4")
-        HashMap5.put(MyConstants.VAL_1,"Black Widow ")
+        HashMap5.put(MyConstants.VAL_1,"Black Widow")
         //
+        HashMap6.put(MyConstants.KEY_1,"5")
+        HashMap6.put(MyConstants.VAL_1,"Spider Man")
         HashMap6.put(MyConstants.KEY_1,"5")
         HashMap6.put(MyConstants.VAL_1,"Spider Man")
         //
@@ -84,6 +107,7 @@ class MainActivity : AppCompatActivity() {
         aux.add(HashMap5)
         aux.add(HashMap6)
         //
+        */
         return aux
     }
 }
